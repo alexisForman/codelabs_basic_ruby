@@ -9,6 +9,9 @@ p "Hello World"
 #Boolean
 
 #Hash
+puts this_hash = { "sky_color" => "blue",
+                    "ground_color" => "green",
+                    :location_name => 'Missouri'}
 
 #Array
 puts [1,3,5,7,9,11]
@@ -44,6 +47,8 @@ p 15%4
 #Concatenation
 puts "This is "<<"an example of "<<"concatenation."
 p "This is "<<"an example of "<<"concatenation."
+p "This is "+"and example of "+"concatenation."
+puts "This is".to_concat('an example of').to_concat('concatenation.')
 
 #Print the seventh letter of "abcdefghijklmnopqrstuvwxyz"
 
@@ -66,3 +71,14 @@ p 1000 < 100000.00
 #value <= 65000.00
 #value >=65000.00
 #puts !value
+
+#- Give an example of the following operators: ||, &&
+
+#Declare a variable called age. if age is less than 30, print "I am __INSERT_AGE_VARIABLE__ years old".
+
+age = 37
+
+
+#Declare a constant variable. if age is less than 30, print "I am __INSERT_AGE_VARIABLE__ years old".
+
+ANOTHER_AGE = 36
