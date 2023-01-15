@@ -1,3 +1,6 @@
+
+
+puts "-------------------------------------------------------------------"
 #HASHES-Video 7
 
 #Creating hashes
@@ -141,6 +144,12 @@ case grade
   puts "You totally failed."
 end
 
+puts "What is my name?"
+if gets.chomp == "Alexis" 
+  puts "#{gets} is my name."
+else
+  puts "No! No! No! Thats not my name."
+end
 
 number=6
 if number<3
@@ -163,19 +172,43 @@ loop do
   break if i==10
 end
 #While loop
-while i<10 do
-  puts "#{i}"
+i = 0 #I had to redeclare this. Apparently ruby couldnt look up before the generic do loop. 
+while i < 10 do
+  puts "Whoa! #{i}"
   i += 1
 end
 
+puts "Please do the dishes."
+while gets.chomp != "yes" do
+  puts "Will you PLEASE do the dishes?"
+end
+
 #Until loop
+i = 0
+until i == 15 do
+  puts "Oh my! #{i}"
+  i +=1
+end
 
 #Ranges
+#Inclusive range includes all numbers from the first listed to the last
+(1..10)
+#Exclusive range doesnt include the last number listed
+(1...10)
 
 #For loop
+for i in 0..10
+  puts "#{i} zobmies incoming!"
+end
+
+for i in 0...10
+  puts "#{i} warewolves are in the trees!"
+end
 
 #Times loop
-
+5.times do
+  puts "Hello World!"
+end
 
 
 
