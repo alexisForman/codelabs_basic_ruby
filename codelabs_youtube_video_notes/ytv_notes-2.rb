@@ -102,3 +102,36 @@ numbers =[1, 2, 3, 4, 5]
 puts numbers.reduce{ |number, sum| sum + number }
 
 puts "----------------------------------------------------------"
+#Classes
+class Party
+  attr_accessor(:invited_count, :invited_names)
+  def initialize
+    @invited_count = 0
+    @invited_names = []
+  end
+
+  def add_invitation(name)
+    @invited_count +=1
+    @invited_names.push(name)
+  end
+
+  def print_invitations
+    puts "I am having a party. I expect #{invited_count} people to come. I am expecting: " 
+    @invited_names.each {|attendee| print "#{attendee}, "}
+  end
+end
+
+party_1 = Party.new
+party_1.add_invitation('Mary')
+party_1.add_invitation('Max')
+party_1.add_invitation('Martha')
+party_1.print_invitations
+party_1.add_invitation('Melba')
+party_1.print_invitations
+party_2 = Party.new
+party_2.print_invitations
+
+
+
+
+
